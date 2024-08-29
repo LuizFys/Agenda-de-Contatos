@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <h1>Cadastro de Contatos</h1>
+
+    <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Digite o nome" required>
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" placeholder="Digite o telefone" required>
+        <div id="error" class="error"></div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- As linhas serão adicionadas aqui -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
